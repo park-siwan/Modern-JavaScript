@@ -3,14 +3,14 @@
 const sayHi = function () {
   console.log('Hi');
 };
-console.log(sayHi.name);
+console.log(sayHi.name); //sayHi
 
 // 함수에 이름을 붙여주면 name 속성은 함수 이름을 문자열로 갖는다.
 const sayHi2 = function printHiInConsole() {
   console.log('Hi2');
 };
 
-console.log(sayHi2.name);
+console.log(sayHi2.name); //printHiInConsole
 
 //이 함수 이름은 함수 내부에서 함수 자체를 가리킬 때 사용할 수 있고 함수를 외부에서 호출해 사용할 순 없다.
 const sayHi3 = function printHiInConsole() {
@@ -19,7 +19,7 @@ const sayHi3 = function printHiInConsole() {
 
 // printHiInConsole(); // ReferrenceError
 
-//기명 함수 표현식은 일반적으로 재귀함수(Recursive function)를 사용
+// 함수 표현식으로 만든 재귀함수 예시
 let countdown = function (n) {
   console.log(n);
 
@@ -60,3 +60,5 @@ let myFunction2 = countdown2;
 countdown2 = null;
 
 myFunction2(5);
+
+//기명 함수 표현식은 일반적으로 재귀함수(Recursive function) 사용에 유용하다.
